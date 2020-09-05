@@ -88,6 +88,9 @@ window.view = {
 		else if (element[1].checked)
 			this.getUserInput()
 	},
+	myTextArea: function(){
+		document.getElementsById("userInput").disabled=true
+	},
 	createBoxes: function() {
 		for ( i = 0 ; i < this.numbers.length ; i++ ) {
 			var outerDiv = document.createElement('div')
