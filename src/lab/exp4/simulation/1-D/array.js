@@ -75,6 +75,7 @@ window.view = {
 			var random = Math.floor(Math.random()*15)
 			this.numbers.push(String(random))
 		}
+		//this.myTextArea()
 	},
 	getUserInput: function() {
 		var inputValue = document.getElementById('userInput').value
@@ -88,9 +89,9 @@ window.view = {
 		else if (element[1].checked)
 			this.getUserInput()
 	},
-	myTextArea: function(){
-		document.getElementsById("userInput").disabled=true
-	},
+	// myTextArea: function(){
+	// 	document.getElementsById("userInput").disabled=true
+	// },
 	createBoxes: function() {
 		for ( i = 0 ; i < this.numbers.length ; i++ ) {
 			var outerDiv = document.createElement('div')
