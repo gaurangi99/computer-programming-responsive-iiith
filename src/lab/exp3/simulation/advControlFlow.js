@@ -167,7 +167,7 @@ window.view = {
     	this.clearDivs()
     	var selected_loop = this.getSelectedLoop()
 		var inputValue = document.getElementById('simpleLoopInput').value
-		if ((inputValue>=1 && inputValue<=20)) {
+		if ((inputValue>=0 && inputValue<=20)) {
 			if (selected_loop === 'for' && inputValue !== '' && !isNaN(model.inp) )
 			{
 				this.displayLoop('forLoopContent', 'codeContentFor1')
